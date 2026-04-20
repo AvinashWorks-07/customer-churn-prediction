@@ -1,15 +1,31 @@
-# 📊 Customer Churn Prediction (Machine Learning Project)
+# 📊 Customer Churn Prediction (End-to-End ML Project)
 
 ## 🚀 Overview
 
-This project focuses on predicting customer churn using Machine Learning techniques.
-The goal is to identify whether a customer is likely to leave the service based on their usage and account information.
+This project predicts whether a customer will churn (leave the service) or not using Machine Learning.
+
+It covers the complete ML pipeline — from data preprocessing to model deployment.
 
 ---
 
-## 📂 Dataset
+## 📂 Project Structure
 
-The dataset contains customer-related features such as:
+```
+customer-churn-prediction/
+│
+├── churn.csv              # Dataset
+├── Churn Prediction.ipynb # Jupyter Notebook (EDA + Model Training)
+├── model.pkl              # Trained ML Model
+├── app.py                 # Streamlit Web App
+├── requirements.txt       # Dependencies
+└── README.md              # Project Documentation
+```
+
+---
+
+## 📊 Dataset
+
+The dataset contains customer information such as:
 
 * Gender
 * Senior Citizen
@@ -17,8 +33,8 @@ The dataset contains customer-related features such as:
 * Monthly Charges
 * Total Charges
 * Contract Type
-* Payment Method
 * Internet Service
+* Payment Method
 
 **Target Variable:**
 
@@ -28,29 +44,11 @@ The dataset contains customer-related features such as:
 
 ## 🧠 Workflow
 
-### 1. Data Loading
-
-* Dataset loaded using Pandas
-
-### 2. Data Preprocessing
-
-* Handling missing values
-* Encoding categorical variables
-* Feature selection
-
-### 3. Exploratory Data Analysis (EDA)
-
-* Understanding feature distributions
-* Checking relationships between features and churn
-
-### 4. Model Training
-
-* Logistic Regression model used for classification
-
-### 5. Model Evaluation
-
-* Accuracy score calculated
-* Predictions made on test data
+1. Data Cleaning & Preprocessing
+2. Exploratory Data Analysis (EDA)
+3. Feature Encoding
+4. Model Training (Logistic Regression)
+5. Model Evaluation
 
 ---
 
@@ -60,9 +58,22 @@ The dataset contains customer-related features such as:
 
 ---
 
-## 📈 Evaluation Metric
+## 📈 Evaluation
 
-* Accuracy Score
+* Model evaluated using Accuracy Score
+* Predictions made on test dataset
+
+---
+
+## 🌐 Streamlit App
+
+The project includes a web application built using Streamlit.
+
+### Features:
+
+* User-friendly input interface
+* Real-time churn prediction
+* Instant results
 
 ---
 
@@ -72,31 +83,23 @@ The dataset contains customer-related features such as:
 * Pandas
 * NumPy
 * Scikit-learn
-* Jupyter Notebook
-
----
-
-## 📊 Key Insights
-
-* Customers with higher monthly charges are more likely to churn
-* Longer tenure customers are less likely to churn
-* Contract type plays an important role in churn prediction
+* Streamlit
 
 ---
 
 ## ⚠️ Disclaimer
 
-This is a **mini practice project** built for learning purposes.
-The model performance may vary with real-world data.
+This is a **mini learning project** created for practice purposes.
+Model predictions may not be 100% accurate.
 
 ---
 
 ## 🔮 Future Improvements
 
-* Try advanced models (Random Forest, XGBoost)
-* Perform hyperparameter tuning
-* Add feature importance visualization
-* Deploy using Streamlit
+* Add advanced models (Random Forest, XGBoost)
+* Improve feature engineering
+* Add visualization (confusion matrix, ROC curve)
+* Deploy on cloud
 
 ---
 
@@ -108,4 +111,4 @@ The model performance may vary with real-world data.
 
 ## ⭐ Support
 
-If you found this project helpful, consider giving it a ⭐ on GitHub.
+If you found this project useful, consider giving it a ⭐
